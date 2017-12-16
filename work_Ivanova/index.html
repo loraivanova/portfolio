@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-box">
+        <div class="container"><!--flex ведет себя страноо, поэтому мы делаем впереди просто дdiv-->
+            <header  class="top-header">
+                <div class="logo-box">
+                    <h1 class="logo-box__title">back-one</h1>
+                    <p class="logo-box__slogan">one page flat template</p>
+                </div><!--logo-box-->
+                <nav class="nav">
+                    <h2 class="headtitle">Menu</h2><!--лучше секции озаглавливать-->
+                    <div id="toggle-menu" data-toggle="#nav-menu" class="toggle-menu"><!-- data-toggle="#nav-menu" - для бутстрап!сначала active написали, потом в css сдалелаи и убрали чтоб потом работать в JQ-->
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div id="nav-menu" class="nav-menu">
+                        <a class="nav__item" href="#home">home</a>
+                        <a class="nav__item" href="#portfolio">portfolio</a>
+                        <a class="nav__item" href="#about">about</a>
+                        <a class="nav__item" href="#contacts">contacts</a>
+                    </div>
+                </nav>
+            </header>
+        </div><!--container-->
+    </div><!--top-box-->
+
+    <div class="main-content">
+        <div id="slider" class="slider">
+            <figure class="slider-content">
+                <img src="i/sl1.jpg" alt="#">
+                <figcaption>
+                    <h2 class="slider-content__title">We Build <span>Brand</span></h2>
+                    <p class="slider-content__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <button class="slider-content__btn btn">learn more</button>
+                </figcaption>
+            </figure>
+
+            <figure class="slider-content">
+                <img src="i/sl1.jpg" alt="#"><!---->
+                <figcaption>
+                    <h2 class="slider-content__title">We Build <span>Brand</span></h2>
+                    <p class="slider-content__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <button class="slider-content__btn btn">learn more</button>
+                </figcaption>
+            </figure>
+        </div><!--slider-->
+    </div><!--main-content-->
+
+    <div class="container">
+        <div id="portfolio" class="portfolio">
+            <h2 class="portfolio__head head-same">portfolio</h2>
+            <p class="portfolio__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <nav class="nav__choose">
+                <button class="nav__main btn" data-filter=".choose">all</button>
+                <button class="nav__main btn" data-filter=".web">web design</button>
+                <button class="nav__main btn" data-filter=".graphic">graphic design</button>
+                <button class="nav__main btn" data-filter=".flat">flat design</button>
+            </nav>
+
+            <div class="gallery">
+                    <div class="choose graphic">
+                        <img src="i/img-1.jpg">
+                        <div class="inner">
+                            <p><img src="i/search.png"></p>
+                            <div class="choose__hover">
+                                <p>example title</p>
+                                <p>graphic design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose web">
+                        <img src="i/img-2.jpg">
+                        <div class="inner">
+                            <p><img src="i/search.png"></p>
+                            <div class="choose__hover">
+                                <p>example title</p>
+                                <p>graphic design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose graphic">
+                        <img src="i/img-3.jpg">
+                        <div class="inner">
+                            <p><img src="i/search.png"></p>
+                            <div class="choose__hover">
+                                <p>example title</p>
+                                <p>graphic design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose flat">
+                        <img src="i/img-4.jpg">
+                        <div class="inner">
+                            <p><img src="i/search.png"></p>
+                            <div class="choose__hover">
+                                <p>example title</p>
+                                <p>graphic design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose graphic">
+                        <img src="i/img-5.jpg">
+                        <div class="inner">
+                            <p><img src="i/search.png"></p>
+                            <div class="choose__hover">
+                                <p>example title</p>
+                                <p>graphic design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose flat">
+                        <img src="i/img-6.jpg">
+                        <div class="inner">
+                            <p><img src="i/search.png"></p>
+                            <div class="choose__hover">
+                                <p>example title</p>
+                                <p>graphic design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose graphic">
+                        <img src="i/img-1.jpg">
+                        <div class="inner">
+                            <p><img src="i/search.png"></p>
+                            <div class="choose__hover">
+                                <p>example title</p>
+                                <p>graphic design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose web">
+                        <img src="i/img-2.jpg">
+                        <div class="inner">
+                            <p><img src="i/search.png"></p>
+                            <div class="choose__hover">
+                                <p>example title</p>
+                                <p>graphic design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--gallery-->
+        </div><!--portfolio-->
+    </div><!--container-->
+
+
+    <div class="top-container">
+        <div class="container">
+            <div id="about" class="about">
+                <h2 class="about__head head-same">about us</h2>
+                <p class="about__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <div class="box-team">
+                    <div class="person">
+                        <img src="i/ava1.jpg">
+                        <div class="person__content">
+                            <div class="person__content-main">
+                                <p class="name">melannie doe</p>
+                                <p class="position">project manager</p>
+                            </div>
+                            <p class="text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="icon">
+                            <span class="icon-facebook"></span>
+                            <span class="icon-twitter"></span>
+                            <span class="icon-google"></span>
+                            <span class="icon-dribbble"></span>
+                        </div><!--icon-->
+                    </div><!--person-->
+                    <div class="person">
+                        <img src="i/ava3.jpg">
+                        <div class="person__content">
+                            <div class="person__content-main">
+                                <p class="name">jhonnie doe</p>
+                                <p class="position">graphic designer</p>
+                            </div>
+                            <p class="text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="icon">
+                            <span class="icon-facebook"></span>
+                            <span class="icon-twitter"></span>
+                            <span class="icon-google"></span>
+                            <span class="icon-dribbble"></span>
+                        </div><!--icon-->
+                    </div><!--person-->
+                    <div class="person">
+                        <img src="i/ava2.jpg">
+                        <div class="person__content">
+                            <div class="person__content-main">
+                                <p class="name">daniel doe</p>
+                                <p class="position">web designer</p>
+                            </div>
+                            <p class="text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="icon">
+                            <span class="icon-facebook"></span>
+                            <span class="icon-twitter"></span>
+                            <span class="icon-google"></span>
+                            <span class="icon-dribbble"></span>
+                        </div><!--icon-->
+                    </div><!--person-->
+                </div><!--box-team-->
+            </div><!--about-->
+        </div><!--container-->
+    </div><!--top-container-->
+
+    <div class="top-container-contact">
+        <div class="container">
+            <div id="contacts" class="contact">
+                <h2 class="contact-head head-same">contact us</h2>
+                <p class="contact__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <div class="top-contact-item">
+                    <div class="field">
+                        <form class="field-form">
+                            <input type="text" name="name" class="form" placeholder="Your name">
+                            <input type="email" name="email" class="form" placeholder="Your email">
+                        </form>
+                        <textarea class="form" placeholder="Your message" rows="10"></textarea>
+
+                    </div><!--field-->
+                    <div class="field contact__company">
+                        <h2 class="header">information</h2>
+                        <div class="info-item style">
+                            <p><span class="info-icon">
+                                <span class="icon-location"></span>
+                            </span>bank-one company</p>
+                            <p>12345 hollywood bvld street</p>
+                            <p>los angeles, california</p>
+                        </div>
+                        <div class="info-item style">
+                            <p><span class="info-icon">
+                                    <span class="icon-phone"></span>
+                                </span>+444 (phone) 123456
+                            </p>
+                        </div>
+
+                        <div class="info-item">
+                            <p><span class="info-icon">
+                                    <span class="icon-printer"></span>
+                                </span>+123 (FAX) 0011223</p>
+                        </div>
+
+                        <div class="info-item">
+                            <p><span class="info-icon">
+                                    <span class="icon-envelop"></span>
+                                </span>info@bak-onecompany.com
+                            </p>
+                        </div>
+                    </div><!--contact__company-->
+
+                </div>
+                <button class="field__button btn">submit</button>
+            </div><!--contact-->
+        </div><!--container-->
+    </div><!--top-container-contact-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__company">&copy Copyright 2013 Bak-One  |  One Page Flat Template</div>
+        </div><!--container-->
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
