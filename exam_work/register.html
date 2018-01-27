@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flowers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="png" href="http://faviconka.ru/ico/faviconka_ru_296.gif">
+</head>
+<body>
+<div class="top-box">
+    <div class="container">
+        <header  class="top-header">
+            <div class="logo-box">i <img src="i/heart-sketch.png" alt="#"> flowers</div><!--logo-box-->
+            <nav class="nav">
+                <h2 class="head-title">Menu</h2>
+                <div id="toggle-menu" data-switch="#nav-menu" class="toggle-menu">
+                    <span></span><span></span><span></span>
+                </div>
+                <div id="nav-menu" class="nav-menu">
+                    <div class="nav-menu__block">
+                        <a class="nav__item" href="index.html">главная</a>
+                    </div>
+                    <div class="nav-menu__block">
+                        <a class="nav__item" href="floristics.html">флористика для начинающих</a>
+                    </div>
+                    <div  class="nav-menu__block">
+                        <a class="nav__item" href="courses.html">все курсы</a>
+                    </div>
+                    <div  class="nav-menu__block">
+                        <a class="nav__same focus" href="register.html">регистрация</a>
+                        <a class="nav__same" href="enter.html">войти</a>
+                    </div>
+                </div>
+            </nav>
+        </header><!--top-header-->
+    </div><!--container-->
+</div><!--top-box-->
+
+
+<div class="register-box">
+    <div class="container">
+        <div class="register">
+            <div class="price-inner">
+                <img class="register-img" src="https://html5book.ru/wp-content/uploads/2017/05/form-flower.png">
+                <a class="a-register" href="enter.html">Войти</a>
+                <form action="" name="form-register">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" required><label for="name">Ваше имя</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" id="mail" required><label for="mail">Электронный адрес</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                    </div>
+                    <label class="form-condition">
+                        <input type="checkbox" checked> Я согласен на обработку моих персональных данных в соответствии с <a href="condition.html">Условиями</a>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div><!--container-->
+</div><!--price-box-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
